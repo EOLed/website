@@ -19,5 +19,11 @@ module Mcac
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.middleware.insert_before(Rack::Runtime, Rack::Rewrite) do
+      index_file = Rails.root.join('public', 'index.html').to_s
+      send_file(/.*/, index_file, if: ->(rack_env) {
+        rack_env['PATH_INFO'] !~ /^\/api.*$/
+      })
+    end
   end
 end
