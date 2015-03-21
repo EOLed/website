@@ -25,3 +25,7 @@ gem 'spring',        group: :development
 
 gem 'basechurch', github: 'openmcac/basechurch', branch: :master
 gem 'rack-rewrite', '~> 1.5.0'
+
+group :development do
+  gem 'knife-solo', '~> 0.4.2'
+end

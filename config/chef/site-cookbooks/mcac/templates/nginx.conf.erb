@@ -1,0 +1,12 @@
+server {
+  server_name www.<%= node['domain'] %>;
+  return 301 $scheme://<%= node['domain'] %>$request_uri;
+}
+
+server {
+  listen 80 default deferred;
+  server_name <%= node['domain'] %>;
+  access_log /var/www/<%= node['domain'] %>/log/access.log;
+  error_log /srv/www/<%= node['domain'] %>/log/error.log;
+  root /var/www/<%= node['domain'] %>/public;
+}
