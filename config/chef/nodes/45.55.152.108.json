@@ -4,6 +4,7 @@
     "recipe[mcac::users]",
     "recipe[mcac::postgres]",
     "recipe[mcac::rbenv]",
+    "recipe[mcac::redis]",
     "recipe[mcac::nginx]",
     "recipe[mcac::app]"
   ],
