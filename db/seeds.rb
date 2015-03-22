@@ -1,10 +1,10 @@
 group = Basechurch::Group.create(name: 'English Service')
 user = Basechurch::User.create(email: 'test@example.com', password: 'password')
-bulletin = Basechurch::Bulletin.create(published_at: 1.year.ago,
+bulletin = Basechurch::Bulletin.create(published_at: 1.month.ago,
                                        group: group,
                                        name: 'Sunday Service',
                                        description: 'This is a service bulletin.',
-                                       service_order: ' - ## Call to Worship - ## Praise & Worship Edwin\'s Team - ## Announcements - ## Offering - ## Sermon "Our Father" by Pastor Ryan Lee (Matthew 6:9) - ## Doxology - ## Benediction')
+                                       service_order: " - ## Call to Worship\n - ## Praise & Worship Edwin's Team\n - ## Announcements\n - ## Offering\n - ## Sermon \"Our Father\" by Pastor Ryan Lee (Matthew 6:9)\n - ## Doxology\n - ## Benediction")
 post = Basechurch::Post.create(author: user,
                                group: group,
                                title: 'This is a title',
