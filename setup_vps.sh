@@ -2,14 +2,14 @@
 
 # check for correct number of arguments
 if [ $# -ne 4 ]; then
-  echo "Usage: $0 <user> <ip> <port> <stage>"
+  echo "Usage: $0 <user> <ip> <stage>"
   exit 1
 fi
 
 # set variables
 USER=$1
 IP=$2
-PORT=$3
+PORT=22
 STAGE=$4
 
 # upload key for root
