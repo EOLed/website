@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/openmcac/basechurch.git
-  revision: 36d7f7f5ee09b07d8d299fbcdcb010c8aecdfdc8
+  revision: d15a2d397b1d7678c8cc0c81c6037bde93b0dab4
   branch: master
   specs:
     basechurch (0.0.2)

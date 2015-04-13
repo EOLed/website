@@ -9,7 +9,6 @@ fi
 # set variables
 USER=$1
 IP=$2
-PORT=22
 STAGE=$4
 
 # upload key for root
@@ -22,10 +21,10 @@ cd config/chef && bundle exec knife solo prepare root@$IP
 bundle exec knife solo cook root@$IP
 
 # upload key for user
-ssh-copy-id -i ~/.ssh/id_rsa.pub -p $PORT $USER@$IP
+ssh-copy-id -i ~/.ssh/id_rsa.pub $USER@$IP
 
 # upload app
 cd ../.. && bundle exec cap $STAGE deploy
 
 # restart nginx
-ssh -p $PORT -t $USER@$IP 'sudo service nginx restart'
+ssh -t $USER@$IP 'sudo service nginx restart'
