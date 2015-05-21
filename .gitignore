@@ -16,3 +16,6 @@
 /tmp
 
 secrets.yml
+production-secrets.yml
+development-secrets.yml
+staging-secrets.yml
