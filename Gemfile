@@ -27,6 +27,7 @@ gem 'capistrano-rbenv', '~> 2.0'
 
 gem 'basechurch', github: 'openmcac/basechurch', branch: :master
 gem 'rack-rewrite', '~> 1.5.0'
+gem "settingslogic", "~> 2.0.8"
 
 group :development do
   gem 'knife-solo', '~> 0.4.2'
