@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/openmcac/basechurch.git
-  revision: d15a2d397b1d7678c8cc0c81c6037bde93b0dab4
+  revision: 959379d99cbf0b0cb5c809a15f502c24fc94dea3
   branch: master
   specs:
     basechurch (0.0.2)
@@ -13,7 +13,9 @@ GIT
       jsonapi-resources (~> 0.1.1, >= 0.1.1)
       rails (~> 4.1.8, >= 4.1.8)
       rails-api (~> 0.3, >= 0.3.1)
+      settingslogic (~> 2.0.8, >= 2.0.8)
       travis (~> 1.5, >= 1.5.0)
+      validate_url (~> 1.0, >= 1.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -46,7 +48,7 @@ GEM
       tzinfo (~> 1.1)
     acts-as-taggable-on (3.5.0)
       activerecord (>= 3.2, < 5)
-    acts_as_list (0.6.0)
+    acts_as_list (0.7.2)
       activerecord (>= 3.0)
     addressable (2.3.8)
     arel (5.0.1.20140414130214)
@@ -128,11 +130,10 @@ GEM
       net-http-persistent (>= 2.7)
       net-http-pipeline
     hashie (2.1.2)
-    highline (1.7.1)
-    hike (1.2.3)
+    highline (1.7.2)
     i18n (0.7.0)
     ipaddress (0.8.0)
-    jbuilder (2.2.12)
+    jbuilder (2.2.16)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     json (1.8.2)
@@ -148,8 +149,8 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
-    mime-types (2.4.3)
-    minitest (5.5.1)
+    mime-types (2.5)
+    minitest (5.6.1)
     mixlib-authentication (1.3.0)
       mixlib-log
     mixlib-cli (1.5.0)
@@ -189,10 +190,10 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
-    pusher-client (0.6.0)
+    pusher-client (0.6.2)
       json
       websocket (~> 1.0)
-    rack (1.5.2)
+    rack (1.5.3)
     rack-rewrite (1.5.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -243,17 +244,15 @@ GEM
       rspec (~> 3.0)
       rspec-its
       specinfra (~> 2.15)
+    settingslogic (2.0.9)
     slop (3.6.0)
     specinfra (2.19.4)
       net-scp
       net-ssh
     spring (1.2.0)
-    sprockets (2.12.3)
-      hike (~> 1.2)
-      multi_json (~> 1.0)
+    sprockets (3.1.0)
       rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.2.4)
+    sprockets-rails (2.3.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
@@ -265,8 +264,7 @@ GEM
     systemu (2.6.4)
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (1.4.1)
-    travis (1.7.5)
+    travis (1.7.6)
       addressable (~> 2.3)
       backports
       faraday (~> 0.9)
@@ -289,9 +287,12 @@ GEM
       rack
       raindrops (~> 0.7)
     uuidtools (2.1.5)
+    validate_url (1.0.0)
+      activemodel (>= 3.0.0)
+      addressable
     warden (1.2.3)
       rack (>= 1.0)
-    websocket (1.2.1)
+    websocket (1.2.2)
     wmi-lite (1.0.0)
 
 PLATFORMS
