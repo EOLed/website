@@ -23,6 +23,6 @@
     }
   },
   "unicorn": {
-    "worker_count": "5"
+    "worker_count": "2"
   }
 }
