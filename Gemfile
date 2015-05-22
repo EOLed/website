@@ -17,6 +17,9 @@ gem 'spring',        group: :development
 # Use unicorn as the app server
 gem 'unicorn'
 
+gem 'execjs'
+gem 'therubyracer'
+
 # Use Capistrano for deployment
 gem 'capistrano-rails', '~> 1.1.0'
 gem 'capistrano-bundler'

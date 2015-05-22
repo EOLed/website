@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # check for correct number of arguments
-if [ $# -ne 4 ]; then
+if [ $# -ne 3 ]; then
   echo "Usage: $0 <user> <ip> <stage>"
   exit 1
 fi
@@ -9,7 +9,7 @@ fi
 # set variables
 USER=$1
 IP=$2
-STAGE=$4
+STAGE=$3
 
 # upload key for root
 ssh-copy-id -i ~/.ssh/id_rsa.pub root@$IP

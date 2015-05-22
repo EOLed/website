@@ -15,7 +15,9 @@ set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 set :keep_releases, 3
 
 # files we want symlinking to specific entries in shared
-set :linked_files, %w{config/database.yml config/unicorn.rb config/staging-secrets.yml}
+linked_files = %w{config/database.yml config/unicorn.rb}
+linked_files << "config/#{fetch(:stage)}-secrets.yml"
+set :linked_files, linked_files
 
 # dirs we want symlinking to shared
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
