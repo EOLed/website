@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/openmcac/basechurch.git
-  revision: c49432e3feb5cdf4e72cb0bed33c02ec33d50b12
+  revision: 849e278bcc03b94f001bf59b590373b4f814fe3c
   branch: master
   specs:
     basechurch (0.0.2)
@@ -99,7 +99,7 @@ GEM
       uuidtools (~> 2.1)
     coderay (1.1.0)
     colorize (0.7.5)
-    devise (3.4.1)
+    devise (3.5.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
